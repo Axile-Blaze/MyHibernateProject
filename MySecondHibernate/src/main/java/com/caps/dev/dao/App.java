@@ -56,7 +56,7 @@ public class App
 			//3rd version of getConnnecton()
 			con = DriverManager.getConnection(dbUrl,"root","anurag@12"); //1st version of getConnection
 
-			String sql = "insert into movies_info values(?,?,?,?)";
+			String sql = "insert into movies_info values(?,?,?,?,?)";
 
 			pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, person.getPid());
